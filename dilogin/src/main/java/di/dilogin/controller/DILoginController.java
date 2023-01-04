@@ -26,7 +26,7 @@ public interface DILoginController {
 	 * @return The basis for embed messages.
 	 */
 	EmbedBuilder getEmbedBase();
-	
+
 	/**
 	 * Check if the session system is enabled.
 	 *
@@ -53,7 +53,7 @@ public interface DILoginController {
 	default boolean isSyncronizeOptionEnabled() {
 		return MainController.getDIApi().getInternalController().getConfigManager().getBoolean("syncro_enable");
 	}
-	
+
 	/**
 	 * Check if register in the server is optional.
 	 *
@@ -62,36 +62,36 @@ public interface DILoginController {
 	default boolean isRegisterOptionalEnabled() {
 		return MainController.getDIApi().getInternalController().getConfigManager().getBoolean("register_optional_enabled");
 	}
-	
+
 	/**
-	 * Check if register in the server is optional.
+	 * Check if register rol list in the server is optional.
 	 *
 	 * @return true if its enabled.
 	 */
 	default boolean isRegisterRolListEnabled() {
 		return MainController.getDIApi().getInternalController().getConfigManager().getBoolean("register_role_list_enabled");
 	}
-	
+
 	/**
-	 * Check if user will get some role after 
+	 * Check if user will get some role after.
 	 *
 	 * @return true if its enabled.
 	 */
 	default boolean isRegisterGiveRoleEnabled() {
 		return MainController.getDIApi().getInternalController().getConfigManager().getBoolean("register_give_role_enabled");
 	}
-	
+
 	/**
-	 * Check if user will get some role after 
+	 * Check if register by nickname enabled.
 	 *
 	 * @return true if its enabled.
 	 */
 	default boolean isRegisterByNickNameEnabled() {
 		return MainController.getDIApi().getInternalController().getConfigManager().getBoolean("register_by_nickname_enabled");
 	}
-	
+
 	/**
-	 * Check if user will get some role after 
+	 * Check if register by discord id enabled.
 	 *
 	 * @return true if its enabled.
 	 */
@@ -100,7 +100,7 @@ public interface DILoginController {
 	}
 
 	/**
-	 * Check if user will get some role after 
+	 * Check if register by discord command enabled.
 	 *
 	 * @return true if its enabled.
 	 */
@@ -125,7 +125,7 @@ public interface DILoginController {
 
 	/**
 	 * Start the player session.
-	 * 
+	 *
 	 * @param playerName Bukkit player.
 	 * @param user       Discord user.
 	 */
@@ -140,7 +140,7 @@ public interface DILoginController {
 
 	/**
 	 * Syncro minecraft name with discord name.
-	 * 
+	 *
 	 * @param playerName Minecraft player name.
 	 * @param user       Discord user.
 	 */
